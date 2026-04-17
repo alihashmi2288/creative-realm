@@ -17,6 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://creativerealm.studio"),
   title: "Creative Realm | DIGITAL BRUTALIST MANIFESTO",
   description: "An independent creative studio dedicated to elevating high-end brands through unpolished strength and kinetic precision.",
   openGraph: {
