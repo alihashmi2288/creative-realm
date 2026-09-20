@@ -117,7 +117,7 @@ export default function Portfolio() {
             {...fadeInUp}
             className="text-6xl md:text-[8vw] font-black text-black font-headline leading-[0.85] uppercase tracking-tighter mb-12"
           >
-            LET'S BUILD<br />THE FUTURE
+            LET&apos;S BUILD<br />THE FUTURE
           </m.h2>
           <m.div {...fadeInUp} transition={{ delay: 0.2 }}>
             <Link href="/contact">

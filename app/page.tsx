@@ -192,12 +192,12 @@ export default function Home() {
             transition={{ duration: 2 }}
             className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none"
           >
-            <div aria-hidden="true" className="text-[30vw] font-black text-black leading-none uppercase -translate-x-20">"QUOTE"</div>
+            <div aria-hidden="true" className="text-[30vw] font-black text-black leading-none uppercase -translate-x-20">&quot;QUOTE&quot;</div>
           </m.div>
           <div className="max-w-7xl mx-auto relative z-10">
             <m.div {...fadeInUp} aria-hidden="true" className="text-8xl md:text-[12rem] font-black text-black leading-none mb-12 select-none opacity-20 transform -translate-x-10">“ ”</m.div>
             <m.h2 {...fadeInUp} className="text-4xl md:text-8xl font-black uppercase leading-[0.9] italic text-black break-words">
-              "CREATIVE REALM REDEFINED HOW WE COMMUNICATE. THEIR APPROACH TO UI IS AN <span className="text-white bg-black px-4">UNSTOPPABLE</span> FORCE."
+              &quot;CREATIVE REALM REDEFINED HOW WE COMMUNICATE. THEIR APPROACH TO UI IS AN <span className="text-white bg-black px-4">UNSTOPPABLE</span> FORCE.&quot;
             </m.h2>
             <m.div 
               initial={{ width: 0 }}

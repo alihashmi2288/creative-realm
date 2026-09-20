@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { BrutalistButton } from "@/components/ui/Brutalist";
@@ -34,7 +33,7 @@ export default function Contact() {
         </m.h1>
         <m.div {...fadeInUp} className="max-w-2xl">
           <p className="text-white/60 text-xl md:text-2xl font-light leading-relaxed">
-            We build digital monuments for the industrial age. Let's engineer your next breakthrough.
+            We build digital monuments for the industrial age. Let&apos;s engineer your next breakthrough.
           </p>
         </m.div>
       </section>
