@@ -9,17 +9,22 @@ import CustomCursor from "@/components/ui/CustomCursor";
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-headline",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 const inter = Inter({
   variable: "--font-body",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://creativerealm.studio"),
   title: "Creative Realm | DIGITAL BRUTALIST MANIFESTO",
-  description: "An independent creative studio dedicated to elevating high-end brands through unpolished strength and kinetic precision.",
+  description:
+    "An independent creative studio dedicated to elevating high-end brands through unpolished strength and kinetic precision.",
   openGraph: {
     title: "Creative Realm | DIGITAL BRUTALIST MANIFESTO",
     description: "Architecting visual narratives for the industrial age.",
@@ -47,6 +52,12 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport = {
+  themeColor: "#D4FF00",
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -54,9 +65,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${plusJakartaSans.variable} ${inter.variable}`}>
-       <body className="antialiased bg-black selection:bg-primary selection:text-black">
+      <body className="antialiased bg-black selection:bg-primary selection:text-black">
         <ScrollProvider>
-          <div className="noise-overlay" />
+          <div className="noise-overlay" aria-hidden="true" />
           <CustomCursor />
           {children}
         </ScrollProvider>

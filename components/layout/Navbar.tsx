@@ -47,7 +47,7 @@ export default function Navbar() {
               fill 
               sizes="(max-width: 768px) 8rem, 12rem"
               className="object-contain"
-              priority
+              preload={true}
             />
           </div>
           <span className="text-[10px] font-black uppercase tracking-[0.3em] text-primary opacity-0 group-hover:opacity-100 transition-opacity hidden md:block">

@@ -30,13 +30,14 @@ export default function Footer() {
           </p>
           <div className="mt-20 flex gap-4">
             {[
-              { label: "IG", href: "https://instagram.com/creativerealm" },
-              { label: "LI", href: "https://linkedin.com/company/creativerealm" },
-              { label: "BE", href: "https://behance.net/creativerealm" }
+              { label: "IG", ariaLabel: "Follow us on Instagram", href: "https://instagram.com/creativerealm" },
+              { label: "LI", ariaLabel: "Connect with us on LinkedIn", href: "https://linkedin.com/company/creativerealm" },
+              { label: "BE", ariaLabel: "View our portfolio on Behance", href: "https://behance.net/creativerealm" }
             ].map((social) => (
               <a 
                 key={social.label}
                 href={social.href}
+                aria-label={social.ariaLabel}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-16 h-16 bg-black flex items-center justify-center text-primary text-2xl font-black italic hover:bg-white hover:text-black transition-colors"
@@ -50,7 +51,7 @@ export default function Footer() {
 
       <div className="mt-32 pt-12 border-t-8 border-black flex flex-col md:flex-row justify-between items-end gap-8">
         <p className="text-2xl font-black uppercase">© 2024 CREATIVE REALM STUDIO. ALL RIGHTS FORGED.</p>
-        <p className="text-8xl font-black italic opacity-10 select-none">BRUTAL</p>
+        <p aria-hidden="true" className="text-8xl font-black italic opacity-10 select-none">BRUTAL</p>
       </div>
     </footer>
   );
