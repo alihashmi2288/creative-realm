@@ -55,14 +55,11 @@ export default function Portfolio() {
       <div className="md:ml-64 pt-24 min-h-screen">
         {/* Hero Section */}
         <section className="px-6 md:px-12 py-12 md:py-24 border-b border-white/5">
-          <m.h1 
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
+          <h1 
             className="text-[15vw] md:text-[12vw] font-black text-primary monolith-text font-headline uppercase leading-none"
           >
             SELECTED<br />ARCHIVES
-          </m.h1>
+          </h1>
           <m.div 
             {...fadeInUp}
             className="mt-12 flex flex-col md:flex-row justify-between items-end gap-8"

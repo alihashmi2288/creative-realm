@@ -13,6 +13,15 @@ export default function ScrollProvider({ children }: { children: React.ReactNode
     let idleId: number | null = null;
     let timeoutId: NodeJS.Timeout | null = null;
 
+    // Skip Lenis on mobile/touch devices or if reduced motion is preferred
+    if (
+      typeof window !== "undefined" &&
+      (window.matchMedia("(pointer: coarse)").matches ||
+       window.matchMedia("(prefers-reduced-motion: reduce)").matches)
+    ) {
+      return;
+    }
+
     const initLenis = async () => {
       if (cancelled) return;
       const { default: LenisClass } = await import("lenis");

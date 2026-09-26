@@ -13,23 +13,21 @@ export default function CustomCursor() {
   const cursorYSpring = useSpring(cursorY, springConfig);
 
   useEffect(() => {
-    // Check if we are on desktop
-    const checkDesktop = () => {
-      setIsDesktop(window.innerWidth > 1024);
-    };
-    checkDesktop();
-    window.addEventListener("resize", checkDesktop);
+    // Only enable on desktop devices with fine pointer (mouse)
+    const hasMouse = window.matchMedia("(pointer: fine)").matches && window.innerWidth > 1024;
+    if (!hasMouse) return;
+
+    setIsDesktop(true);
 
     const moveCursor = (e: MouseEvent) => {
       cursorX.set(e.clientX - 16);
       cursorY.set(e.clientY - 16);
     };
 
-    window.addEventListener("mousemove", moveCursor);
+    window.addEventListener("mousemove", moveCursor, { passive: true });
 
     return () => {
       window.removeEventListener("mousemove", moveCursor);
-      window.removeEventListener("resize", checkDesktop);
     };
   }, [cursorX, cursorY]);
 

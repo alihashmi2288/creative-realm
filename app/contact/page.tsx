@@ -23,14 +23,11 @@ export default function Contact() {
         <div className="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none" 
              style={{backgroundImage: "radial-gradient(var(--primary) 1px, transparent 1px)", backgroundSize: "40px 40px"}}>
         </div>
-        <m.h1 
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
+        <h1 
           className="font-headline text-[12vw] md:text-[10rem] font-black leading-[0.85] tracking-tighter uppercase text-white break-words mb-8"
         >
           GET IN <br /> <span className="text-primary">TOUCH</span>
-        </m.h1>
+        </h1>
         <m.div {...fadeInUp} className="max-w-2xl">
           <p className="text-white/60 text-xl md:text-2xl font-light leading-relaxed">
             We build digital monuments for the industrial age. Let&apos;s engineer your next breakthrough.

@@ -22,30 +22,22 @@ export default function About() {
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-end px-12 pb-24 pt-48">
-        <m.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.4 }}
-          transition={{ duration: 1.5 }}
-          className="absolute inset-0 z-0"
-        >
+        <div className="absolute inset-0 z-0 opacity-40">
            <Image 
              src="/images/bf2ce411fb729558a4bc6b29755376c7.png" 
              alt="Brutalist structure" 
              fill 
              sizes="100vw"
              className="object-cover"
-             preload={true}
+             priority
            />
-        </m.div>
+        </div>
         <div className="relative z-10 w-full">
-          <m.h1 
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
+          <h1 
             className="text-[12vw] md:text-[15vw] font-black leading-[0.8] tracking-tighter uppercase font-headline monolith-text"
           >
             REDEFINING<br />THE DIGITAL<br /><span className="text-primary">MONOLITH</span>
-          </m.h1>
+          </h1>
         </div>
       </section>
 

@@ -21,35 +21,26 @@ export default function Home() {
         
         {/* Hero Section */}
         <section className="min-h-screen flex items-center px-4 md:px-12 pt-32 md:pt-40 pb-20 relative overflow-hidden">
-          <m.div 
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 0.15, x: 0 }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
-            className="absolute top-[15%] md:top-20 right-[-10%] md:right-[-5%] pointer-events-none"
+          <div 
+            className="absolute top-[15%] md:top-20 right-[-10%] md:right-[-5%] pointer-events-none opacity-15"
           >
             <span className="text-[40vw] md:text-[25vw] font-black leading-none text-outline-white uppercase select-none">RAW</span>
-          </m.div>
+          </div>
           <div className="max-w-full w-full chaotic-layer">
-            <m.h1 
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+            <h1 
               className="text-6xl sm:text-8xl md:text-[clamp(4rem,15vw,18rem)] font-headline font-black leading-[0.8] tracking-[-0.08em] uppercase italic"
             >
               SIMPLE <span className="text-outline">LINES</span><br />
               BOLD <span className="text-primary italic">IDEAS</span><br />
               <span className="text-outline">TIMELESS</span>
-            </m.h1>
-            <m.div 
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
+            </h1>
+            <div 
               className="mt-8 md:mt-[-2rem] ml-0 md:ml-[10vw] max-w-2xl bg-primary text-black p-6 md:p-8 brutalist-border border-black transform md:-rotate-2"
             >
               <p className="text-xl sm:text-2xl md:text-4xl font-black leading-tight uppercase">
                 An independent creative studio dedicated to elevating high-end brands through unpolished strength.
               </p>
-            </m.div>
+            </div>
           </div>
         </section>
 
